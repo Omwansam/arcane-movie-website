@@ -24,11 +24,19 @@ function App() {
       title: 'O brother Where art thou?',
       imageUrl: 'https://i.pinimg.com/564x/f2/fa/9e/f2fa9e08689c1c23c50b7404576cfb11.jpg',
     },
+    {
+      title: 'Inception',
+      imageUrl: 'https://i.pinimg.com/564x/38/75/ad/3875ada66223249fe88c680b1bddf443.jpg',
+    },
+    {
+      title: 'The Story Of Aaron Swartz',
+      imageUrl: 'https://i.pinimg.com/564x/e7/4f/ea/e74fead76db63711dafdb52fbe63c543.jpg'
+    }
   ];
 
   return (
     <div className="App">
-      <h1>Movie</h1>
+      <h1>Movies</h1>
       <div className="poster-container">
         {movies.map((movie, index) => (
           <Posters key={index} title={movie.title} imageUrl={movie.imageUrl} />
